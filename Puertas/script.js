@@ -35,9 +35,9 @@ const isBot = (door) => {
 
 const gameOver = (status) => {
   if(status === 'win'){
-    startButton.innerHTML = 'You win! Play again?';
+    startButton.innerHTML = 'Ganaste! Otra vez?';
   } else {
-    startButton.innerHTML = 'Game over! Play again?';
+    startButton.innerHTML = 'Perdiste! Otra vez?';
   };
   currentlyPlaying = false;
 };
@@ -103,7 +103,7 @@ function startRound(){
   doorImage3.src = closedDoorPath;
   numClosedDoors = 3;
   currentlyPlaying = true;
-  startButton.innerHTML = 'Good Luck!';
+  startButton.innerHTML = 'Buena suerte!';
   randomChoreDoorGenerator();
 };
 startRound();
